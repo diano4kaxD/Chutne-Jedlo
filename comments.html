@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.css">   <!--  подключение css файла, для стилезации страницы  -->
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700&amp;subset=cyrillic-ext" rel="stylesheet"> <!--  подкюлечение шрифта из гугл библиотек  -->
+    <title>Chutné Jedlo!</title> <!--  название, которое отображается на вкладке -->
+</head>
+<body>
+    <header>
+        
+        <div id="logoc" onclick="slowScroll('#top')">  <!--  при нажатии на кнопу с id "logoc",  выполняется скрол на метку #top  -->
+            <span>Chutné Jedlo!</span>
+        </div>
+    </header>
+
+    <div id="contacts">
+        <center><h5>Nechajte spätnú väzbu</h5></center>
+        <form id="form_input">
+            <label for="name">Meno <span>*</span></label></br> 
+            <input type="text" placeholder="Meno" name="name" id="name"></br> <!--  текстовое поле куда вводитс имя  -->
+            <label for="email">Email <span>*</span></label></br>
+            <input type="email" placeholder="mail@box.com" name="email" id="email"></br> <!--  текстовое поле куда вводится мэил  -->
+            <label for="message">Recenzia <span>*</span></label></br>
+            <textarea placeholder="Write your comment" name="message" id="message"></textarea></br>  <!--  текстовое поле куда вводится комментарий  -->
+            <div id="mess_send" class="btn">Send</div>  <!--  кнопка чтобы отправить сообщение  -->
+            <div id="link_main" class="btn">Main</div>  <!--  кнопка чтобы перейти на главную страницу  -->
+            
+        </form>
+        
+    </div>
+    <div id="faq">
+        <div id="com-field"></div>  <!--  благодаря этой строчки, внутри этого дива, отображаются комментарии, которые берутся из локального хранилища  -->
+    </div>
+
+ 
+    
+    <div id="footer"> <!-- футтер (нижняя панель)  -->
+        <h2>Letecká fakulta - TUKE</h2>  
+        <p>Diana Vynokur, 2020</p>
+    </div>
+
+
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!-- подключение jquery  -->
+    <script src="assets/js/script.js"></script>  <!-- подключение скрипта -->
+    <script>
+        function slowScroll(id) {  //Функция скролла при нажатии на кнопку.
+            $('html, body').animate({
+                scrollTop: $(id).offset().top
+            }, 500);
+        }
+
+        $(document).on("scroll", function() {
+            if($(window).scrollTop() === 0)
+                $("header").removeClass("fixed");
+            else
+                $("header").attr("class", "fixed");
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.css"> <!--  подключение css файла, для стилезации страницы  -->
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700&amp;subset=cyrillic-ext" rel="stylesheet"> <!--  подкюлечение шрифта из гугл библиотек  -->
+    <title>Chutné Jedlo!</title> <!--  название, которое отображается на вкладке -->
+</head>
+<body>
+    <header>
+        <div id="logo" onclick="slowScroll('#top')"> <!--  при нажатии на кнопу с id "logoc",  выполняется скрол на метку #top  -->
+            <span>Chutné Jedlo!</span>
+        </div>
+        <div id="about">
+            <a href="#" title="O nas!" onclick="slowScroll('#main')">O nas!</a> <!--  кнопки навигации, передвигают пользователя по странице, в зависимости от категории  -->
+            <a href="#" title="Autorské recepty" onclick="slowScroll('#overview')">Autorské recepty</a> <!--  кнопки навигации, передвигают пользователя по странице, в зависимости от категории  -->
+            <a href="comments.html" title="Naše recenzie">Naše recenzie</a> <!--  кнопка, которая открывает страницу с комментариями  -->
+            <a href="#" title="FAQ" onclick="slowScroll('#faq')">Informácie</a> <!--  кнопки навигации, передвигают пользователя по странице, в зависимости от категории  -->
+        </div>
+    </header>
+
+    <div id="top">
+        <h1>Varenie</h1>
+        <h3>je korením života!</h3>
+    </div>
+
+    <div id="main">
+         <div class="intro">
+             <h2>O nas a o našej stránke!</h2>
+             <span>Veľký výber všetkého, čo môže byť pre vás užitočné! Chutné recepty, predjedla, molekulárna kuchyňa!</span>
+         </div>
+         <div class="text">
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi repellat quam eveniet modi, dolores blanditiis dicta magnam dolor dolorem natus ipsum architecto delectus est. Laborum, a non aliquid rerum eius adipisci expedita animi. Consectetur porro numquam accusantium dicta, quibusdam assumenda culpa soluta nemo labore. Quo, quae! Natus vel neque animi.</span>
+        </div>
+    </div>
+
+
+    <div id="overview">
+        <h2>Autorské recepty</h2>
+        <h4> Všetko je u nás chutné!</h4>
+        <div class="img">
+            <img src="https://www.interfax.by/files/2012-06/20120601-145629-303.jpg" alt=""> <!--  в данной строке указана сслыка на изображение  -->
+            <span> Dezert "Záhadná kocka"</span> <!--  подпись к изображению  -->
+        </div>
+        <div class="img">
+            <img src="https://img12.postila.ru/resize?w=660&src=%2Fdata%2F5f%2Feb%2F75%2Fca%2F5feb75ca554e6f7ecd57424c3e4f0a85347080a5ab9df6e353ddb4a6db81257f.jpg" alt=""> <!--  в данной строке указана сслыка на изображение  -->
+            <span>Chutné predjedlo "Lienka"</span> <!--  подпись к изображению  -->
+        </div>
+        <div class="img">
+            <img src="https://aif-s3.aif.ru/images/007/447/df1c3fe604327ec57797cee938d90374.JPG" alt=""> <!--  в данной строке указана сслыка на изображение  -->
+            <span>Ryžové tučniaky s krevetami</span> <!--  подпись к изображению  -->
+        </div>
+        <div class="img">
+            <img src="https://static.1000.menu/img/content/18008/krasivyi-bystryi-salat-k-prazdniku-za-10-minut_1481483602_0_max.jpg" alt=""> <!--  в данной строке указана сслыка на изображение  -->
+            <span>Predjedlo "Slnko"</span> <!--  подпись к изображению  -->
+        </div>
+    </div>
+
+
+    <div id="faq"> <!--  вкладка faq  -->
+        <div>
+            <span class="title">Naši zamestnanci</span><br>
+            <span class="heading">Zuzka (20 rokov)</span> 
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quod dicta rerum cumque magnam illum commodi recusandae laboriosam fugit blanditiis dolore, dolores omnis. Cumque quae reiciendis dolorem rem, in delectus!</p>
+            <span class="heading">Andrei (25 rokov)</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quod dicta rerum cumque magnam illum commodi recusandae laboriosam fugit blanditiis dolore, dolores omnis. Cumque quae reiciendis dolorem rem, in delectus!</p>
+            <span class="heading">Paul (38 rokov)</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quod dicta rerum cumque magnam illum commodi recusandae laboriosam fugit blanditiis dolore, dolores omnis. Cumque quae reiciendis dolorem rem, in delectus!</p>
+        </div>
+
+        <div>
+            <span class="title">Náš príbeh</span><br>
+            <span class="heading">2009 rok</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quod dicta rerum cumque magnam illum commodi recusandae laboriosam fugit blanditiis dolore, dolores omnis. Cumque quae reiciendis dolorem rem, in delectus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quod dicta rerum cumque magnam illum commodi recusandae laboriosam fugit blanditiis dolore, dolores omnis. Cumque quae reiciendis dolorem rem, in delectus!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quod dicta rerum cumque magnam illum commodi recusandae laboriosam fugit blanditiis dolore, dolores omnis. Cumque quae reiciendis dolorem rem, in delectus!
+            </p>
+            
+        </div>
+
+        <div>
+            <span class="title">Kde sme?</span><br>
+            <span class="heading">Hlavná 75/97, 040 01 Košice</span>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10527.955236131935!2d21.2561396!3d48.7248055!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa5cdaa8ce95cd13e!2sJekyll%26Hyde%20cafe%20bar!5e0!3m2!1ssk!2ssk!4v1607709107256!5m2!1ssk!2ssk" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+    </div>
+    <div id="footer"> <!-- футтер (нижняя панель)  -->
+        <h2>Letecká fakulta - TUKE</h2>
+        <p>Diana Vynokur, 2020</p>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!-- подключение jquery скрипта  -->
+    <script>
+        function slowScroll(id) {  //Функция скролла при нажатии на кнопку.
+            $('html, body').animate({
+                scrollTop: $(id).offset().top
+            }, 500);
+        }
+
+        $(document).on("scroll", function() {
+            if($(window).scrollTop() === 0) 
+                $("header").removeClass("fixed");
+            else
+                $("header").attr("class", "fixed");
+        });
+    </script>
+</body>
+</html>
