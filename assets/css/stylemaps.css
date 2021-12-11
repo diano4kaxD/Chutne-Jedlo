@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Suez+One&display=swap'); /* подключение шрифтов гугл */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&display=swap'); /* подключение шрифтов гугл*/
+
+* {
+    margin: 0;          /*      */
+    padding: 0;         /* Стиль который применяется ко всему файлу html */
+    outline: none;      /*      */
+}
+body, html {
+    width: 100%; /* Атрибут width указывает ширину элемента в пикселях */
+    height: 100%;
+}
+
+iframe {
+    width: 350px;
+    height: 350px;
+}
+body {
+    background-color: #fafafa; /* <-- изменяет цвет заднего фона в body*/
+    font-family: Trebuchet MS, Helvetica; /* Установка шрифтов по умолчанию */
+}
+
+header {
+    width: 100%; /* Атрибут width указывает ширину элемента в пикселях */
+    padding:  10px 0.5% 0px 0.5%; /* отступ сверху 10px, по бокам слева 0.5%, снизу 0px, по бокам с правой стороны 0.5% */
+    background: transparent;
+    float: left; /* float - cвойство определяет, где элемент должен находится.*/
+    position: fixed;
+}
+
+header #logo {
+    color:  black; /* изменить цвет у лого*/
+    cursor: pointer;
+}
+
+header #logoc {
+    color: black; /* изменить цвет у лого */
+    cursor: pointer;
+}
+header #logoc span {
+    font-size: 1.7em; /* размер шрифта */
+    line-height: 45px;
+    margin-left: 40px;
+    font-family: 'Suez One', serif; /* использовать шрифт Suez One, в случае его отсутствия, использовать шрифт serif */
+}
+header #logo span {
+    font-size: 1.7em; /* размер шрифта */
+    line-height: 45px;
+    margin-left: 40px;
+    font-family: 'Suez One', serif; /* использовать шрифт Suez One, в случае его отсутствия, использовать шрифт serif */
+}
+
+@media (min-width: 701px) {
+    #logo {
+        float: left; /* float - cвойство определяет, где элемент должен находится.*/
+        width: 30%; /* Атрибут width указывает ширину элемента в пикселях */
+        font-size: 1.1em; /* размер шрифта */
+    }
+    #about {
+        float: right; /* float - cвойство определяет, где элемент должен находится.*/
+        width: 67%; /* Атрибут width указывает ширину элемента в пикселях */
+    }
+}
+
+@media (max-width: 700px) {
+    #logo {
+        margin-top: 15px; /* отствуп сверху (top) */
+        width: 100%; /* Атрибут width указывает ширину элемента в пикселях */
+        font-size: 1.5em; /* размер шрифта */
+    }
+    #about {
+        float: left; /* float - cвойство определяет, где элемент должен находится.*/
+        width: 100%;
+    }
+}
+
+#about {
+    text-align: center; /* выравнивание текста по центру */
+    font-size: 1em; /* размер шрифта */
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+
+#about > a {color: black} /* изменение цвета*/
+
+#about > a:hover {
+    color: #b0b0b0; /* изменение цвета*/
+    text-decoration: underline; /* отключение подчеркивания текста */
+
+}
+
+#about > a:not(:last-child){
+    margin-right: 7%; /* отступ справа*/
+}
+
+.fixed {
+    z-index: 5000; /* какой имеет слой выбранный элемент, простым языком, на какой позиции он находится относительно других элементов*/
+    background-color: #fff; /* изменение цвета панельки */
+    border-bottom: 1px solid silver; /* обводка кнопки*/
+}
+
+header.fixed #logo {
+    color: black; /* изменение цвета*/
+
+} 
+.fixed #about a {color: #343434} /* изменение цвета*/
+.fixed #about a:hover {color: #7c7c7c} /* изменение цвета*/
+
+#top {
+    width: 100%;
+    
+    background-image: url(https://img2.goodfon.ru/wallpaper/nbig/b/fa/blyuda-assorti-moreprodukty-3407.jpg); /* ссылка на изображение */ 
+    background-blend-mode:  multiply;
+    background-color: #2e3a44; /* изменить цвет заднего фона */
+    background-size: cover;
+    text-align: center; /* выравнивание текста по центру */
+    color: #fff; /* изменить цвет */
+}
+
+@media(min-width: 1001px){
+    #top {
+        font-size: 3em; /* размер шрифта */
+        height: 800px;
+    }
+}
+@media(max-width: 1000px) and (min-width: 651px){
+    #top {
+        font-size: 2em; /* размер шрифта */ 
+        height: 600px;
+    }
+}
+
+@media(max-width: 650px){
+    #top {
+        font-size: 1.3em; /* размер шрифта */
+        padding-top: 50%;
+        height: 500px;
+    }
+}
+
+
+#top h1 {
+    padding-top: 20%;
+}
+
+#top h3 {
+    color: #ccc;  /* изменить цвет */
+}
+
+#main {
+
+    float: left; /* float - cвойство определяет, где элемент должен находится.*/
+    background-color: #f6f6f6;
+    border-top: 2px solid silver;
+    color: #484848; /* изменить цвет */
+    font-size: 1.3em; /* размер шрифта */
+}
+
+@media (min-width: 1401px){
+    #main {
+        padding: 100px 20%;
+        width: 60%;
+    }
+}
+
+@media (max-width: 1400px){
+    #main {
+        padding: 100px 10%;
+        width: 80%;
+    }
+}
+
+@media (max-width: 700px){
+    #main div {
+        width: 98%!important;
+        margin-bottom: 20px;
+    }
+}
+
+#main div {
+    width: 48%;
+    margin-right: 2%;
+    float: left; /* float - cвойство определяет, где элемент должен находится.*/
+
+}
+
+#main h2 {
+    font-size: 3em /* размер шрифта */
+}
+#main span {
+    color: #a0a0a0;
+}
+
+#overview {
+    float: left; /* float - cвойство определяет, где элемент должен находится.*/
+    background-image: url(https://lookw.ru/1/232/1380318157-vkusnie-blyuda--23.jpg);
+    background-blend-mode: multiply;
+    background-color: #2e3a44;
+    background-size: cover;
+    background-attachment: fixed;
+
+    padding: 100px 0;
+    width: 100%;
+    text-align: center; /* выравнивание текста по центру */
+    color: #fff; /* изменить цвет */
+}
+
+#overview h2 {font-size: 4em} /* размер шрифта */
+#overview h4 {color: #ccc; font-size: 1.5em} /* изменить цвет и размер шрифта */ 
+
+#overview .img {
+    float: left; /* float - cвойство определяет, где элемент должен находится.*/
+    width: 30%;
+    margin-right: 5%;
+    margin-top: 50px;
+}
+
+#overview .img:nth-child(odd){
+    margin-left: 18%;
+    
+}
+#overview img {
+    background: #fafafa; /* изменить цвет заднего фона */
+    padding: 5px;
+    border: 2px solid silver; /* создать прямоугольник серебренного цвета */
+    float: left; /* float - cвойство определяет, где элемент должен находится.*/
+    width: 100%;
+    max-width: 500px;
+}
+#overview span {
+    float: left; /* float - cвойство определяет, где элемент должен находится.*/
+    width: 100%;
+    font-size: 2em;
+    margin-top: 10px;
+}
+@media (max-width: 700px) {
+    #overview .img {
+        width: 80%!important;
+        margin-right: 0!important;
+        margin-left: 10%!important;
+    }
+}
+
+#contacts {
+    width: 100%;
+    float: left; /* float - cвойство определяет, где элемент должен находится.*/
+    padding-bottom: 90px;
+    padding-top: 87px;
+    border-top: 4px solid #ccc;
+    background: #f4f4f4; /* изменить цвет заднего фона */
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'JetBrains Mono', serif; /* использовать шрифт JetBrains Mono, в случае его отсутствия, использовать шрифт serif */
+    font-weight: lighter;
+}
+
+#contacts h5 {font-size: 3em; color: #4f4f4f}
+
+#form_input {
+    margin-top: 15px;
+    width:  35%;
+    margin-left: 38%;
+    font-size: 1.1em;
+}
+
+#form_input label {
+    color: #505050; /* изменить цвет */
+    cursor: pointer;
+    font-size: 1.4em; /* размер шрифта */
+    font-family: 'JetBrains Mono', serif; /* использовать шрифт JetBrains Mono, в случае его отсутствия, использовать шрифт serif */
+}
+
+#form_input label > span {
+    color: #e87e7e; /* изменить цвет */
+}
+#form_input input,#form_input textarea {
+    margin-bottom: 10px;
+    width: 70%;
+    padding: 10px 2%;
+    border-radius: 7px;
+    border: 2px solid silver;
+    font-size:  0.9em; /* размер шрифта */
+    color: #4a4a4a; /* изменить цвет */
+}
+
+#form_input input:focus, #form_input textarea:focus {
+    border-color: #333;
+}
+
+.btn {
+    float: left; /* float - cвойство определяет, где элемент должен находится.*/
+    border-radius: 5px;
+    padding: 5px 9px;
+    font-size: 1.2em; /* размер шрифта */
+    background-color: #ec6550; /* изменить цвет фона */
+    text-shadow: #454545 0 0 2px; /* тень для текста */
+    cursor: pointer; /* изменение иконки курсора */
+    color: white; /* изменить цвет */
+    font-family: 'JetBrains Mono', serif; /* использовать шрифт JetBrains Mono, в случае его отсутствия, использовать шрифт serif */
+    margin: 5px; /* отступ сверху */
+}
+
+.btn:hover{
+    background-color: #c15433; /* изменить цвет фона (у кнопки) */
+}
+
+#faq {
+    background-color: #fff; /* изменить цвет */
+    border-top: 2px dashed #e4e3e3;
+    width: 100%; /* указать размер */
+    float: left; /* float - cвойство определяет, где элемент должен находится.*/
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+@media (min-width: 801px){
+    #faq div {
+        width: 25%;
+        margin-left: 6%;
+        float: left; /* float - cвойство определяет, где элемент должен находится.*/
+    }
+}
+@media (min-width: 801px){
+    #faq div {
+        width: 80%;
+        margin-left: 10%;
+        float: left; /* float - cвойство определяет, где элемент должен находится.*/
+    }
+}
+
+#faq div {
+    width: 25%;
+    margin-left: 6%;
+    float: left; /* float - cвойство определяет, где элемент должен находится.*/
+}
+
+
+#faq .title {
+    font-weight: lighter;
+    color: #a3a0ad; /* изменить цвет */
+    margin-bottom: 20px;
+    font-size: 2.2em; /* размер шрифта */
+}
+
+#faq .heading {
+    color: #7d7d7d; /* изменить цвет */
+    font-size: 1.3em; /* размер шрифта */
+    font-weight: bold;
+}
+
+#faq p {
+    font-family: Arimo, Helvetica, sans-serif; /* использовать шрифт Arimo, в случае его отсутствия, использовать шрифт Helvetica или sans-serif */
+    -webkit-font-smoothing: antialiased; /* включить сглаживание текста */
+    color: #4a4a4a; /* изменить цвет */
+    font-size: 0.95em; /* размер шрифта */
+    margin-bottom: 40px;
+}
+
+#footer {
+    background:#4a4a4a;/* цвет заднего фона */ 
+    color: #fff; /* изменить цвет */
+    font-size: 100%; /* размер шрифта в процентах от обычного размера*/
+    padding: 20px; clear : both;
+}
+    
+    
+#footer p {
+    font-family: Arimo, Helvetica, sans-serif; /* использовать шрифт Arimo, в случае его отсутствия, использовать шрифт Helvetica или sans-serif */
+    -webkit-font-smoothing: antialiased; /* включить сглаживание текста */
+    padding: 2px;
+    text-align: center; /* выравнивание текста по центру */
+}
+
+#footer h2 {
+    font-family: Arimo, Helvetica, sans-serif; /* использовать шрифт Arimo, в случае его отсутствия, использовать шрифт Helvetica или sans-serif */
+    -webkit-font-smoothing: antialiased; /* включить сглаживание текста */
+    padding: 2px;
+    text-align: center; /* выравнивание текста по центру */
+}
+    
+.clearfloat { 
+    clear: both;
+}
