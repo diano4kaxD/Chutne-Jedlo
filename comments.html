@@ -2,70 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="assets/css/stylemaps.css"> <!--  подключение css файла, для стилезации страницы  -->
+    <link rel="stylesheet" href="assets/css/style.css">   <!--  подключение css файла, для стилезации страницы  -->
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700&amp;subset=cyrillic-ext" rel="stylesheet"> <!--  подкюлечение шрифта из гугл библиотек  -->
     <title>Chutné Jedlo!</title> <!--  название, которое отображается на вкладке -->
 </head>
 <body>
     <header>
-        <div id="logo" onclick="slowScroll('#top')"> <!--  при нажатии на кнопу с id "logoc",  выполняется скрол на метку #top  -->
+        
+        <div id="logoc" onclick="slowScroll('#top')">  <!--  при нажатии на кнопу с id "logoc",  выполняется скрол на метку #top  -->
             <span>Chutné Jedlo!</span>
-        </div>
-        <div id="about">
-            <a href="index.html" title="O nas!" onclick="slowScroll('#main')">O nas!</a> <!--  кнопки навигации, передвигают пользователя по странице, в зависимости от категории  -->
-            <a href="index.html" title="Autorské recepty" onclick="slowScroll('#overview')">Autorské recepty</a> <!--  кнопки навигации, передвигают пользователя по странице, в зависимости от категории  -->
-            <a href="comments.html" title="Naše recenzie">Naše recenzie</a> <!--  кнопка, которая открывает страницу с комментариями  -->
-            <a href="index.html" title="FAQ" onclick="slowScroll('#faq')">Informácie</a>
-            <a href="#" title="FAQ" onclick="slowScroll('#faq')">Kde sme?</a> <!--  кнопки навигации, передвигают пользователя по странице, в зависимости от категории  -->
         </div>
     </header>
 
-
-
-    <div id="main">
-         <div class="intro">
-             <h2>Kde sme?</h2>
-             <span>Hlavná 75/97, 040 01 Košice.</span>
-             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2631.9928346399224!2d21.25398311552749!3d48.72472857927464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473ee0640eb61c6d%3A0xecc63e45a33876da!2zSGxhdm7DoSA3NS85NywgMDQwIDAxIEtvxaFpY2U!5e0!3m2!1sru!2ssk!4v1639255783350!5m2!1sru!2ssk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-         </div>
-         <div class="text">
-            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi repellat quam eveniet modi, dolores blanditiis dicta magnam dolor dolorem natus ipsum architecto delectus est. Laborum, a non aliquid rerum eius adipisci expedita animi. Consectetur porro numquam accusantium dicta, quibusdam assumenda culpa soluta nemo labore. Quo, quae! Natus vel neque animi.</span>
-        </div>
-    </div>
-
-
-
-    <div id="faq"> <!--  вкладка faq  -->
-        <div>
-            <span class="title">Naši zamestnanci</span><br>
-            <span class="heading">Zuzka (20 rokov)</span> 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quod dicta rerum cumque magnam illum commodi recusandae laboriosam fugit blanditiis dolore, dolores omnis. Cumque quae reiciendis dolorem rem, in delectus!</p>
-            <span class="heading">Andrei (25 rokov)</span>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quod dicta rerum cumque magnam illum commodi recusandae laboriosam fugit blanditiis dolore, dolores omnis. Cumque quae reiciendis dolorem rem, in delectus!</p>
-            <span class="heading">Paul (38 rokov)</span>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quod dicta rerum cumque magnam illum commodi recusandae laboriosam fugit blanditiis dolore, dolores omnis. Cumque quae reiciendis dolorem rem, in delectus!</p>
-        </div>
-
-        <div>
-            <span class="title">Náš príbeh</span><br>
-            <span class="heading">2009 rok</span>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quod dicta rerum cumque magnam illum commodi recusandae laboriosam fugit blanditiis dolore, dolores omnis. Cumque quae reiciendis dolorem rem, in delectus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quod dicta rerum cumque magnam illum commodi recusandae laboriosam fugit blanditiis dolore, dolores omnis. Cumque quae reiciendis dolorem rem, in delectus!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quod dicta rerum cumque magnam illum commodi recusandae laboriosam fugit blanditiis dolore, dolores omnis. Cumque quae reiciendis dolorem rem, in delectus!
-            </p>
+    <div id="contacts">
+        <center><h5>Nechajte spätnú väzbu</h5></center>
+        <form id="form_input">
+            <label for="name">Meno <span>*</span></label></br> 
+            <input type="text" placeholder="Meno" name="name" id="name"></br> <!--  текстовое поле куда вводитс имя  -->
+            <label for="email">Email <span>*</span></label></br>
+            <input type="email" placeholder="mail@box.com" name="email" id="email"></br> <!--  текстовое поле куда вводится мэил  -->
+            <label for="message">Recenzia <span>*</span></label></br>
+            <textarea placeholder="Write your comment" name="message" id="message"></textarea></br>  <!--  текстовое поле куда вводится комментарий  -->
+            <div id="mess_send" class="btn">Send</div>  <!--  кнопка чтобы отправить сообщение  -->
+            <div id="link_main" class="btn">Main</div>  <!--  кнопка чтобы перейти на главную страницу  -->
             
-        </div>
-
-        <div>
-            <span class="title">Kde sme?</span><br>
-            <span class="heading">Hlavná 75/97, 040 01 Košice</span>
-        </div>
+        </form>
+        
     </div>
+    <div id="faq">
+        <div id="com-field"></div>  <!--  благодаря этой строчки, внутри этого дива, отображаются комментарии, которые берутся из локального хранилища  -->
+    </div>
+
+ 
+    
     <div id="footer"> <!-- футтер (нижняя панель)  -->
-        <h2>Letecká fakulta - TUKE</h2>
+        <h2>Letecká fakulta - TUKE</h2>  
         <p>Diana Vynokur, 2021</p>
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!-- подключение jquery скрипта  -->
+
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!-- подключение jquery  -->
+    <script src="assets/js/script.js"></script>  <!-- подключение скрипта -->
     <script>
         function slowScroll(id) {  //Функция скролла при нажатии на кнопку.
             $('html, body').animate({
@@ -74,7 +53,7 @@
         }
 
         $(document).on("scroll", function() {
-            if($(window).scrollTop() === 0) 
+            if($(window).scrollTop() === 0)
                 $("header").removeClass("fixed");
             else
                 $("header").attr("class", "fixed");
